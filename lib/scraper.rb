@@ -10,7 +10,8 @@ class Scraper
     index.css("div.student-card").each do |student|
       stu_details = {}
       stu_details[:name] = student.css("h4.student-name")
-      stu_details[:location] = student.css()
+      stu_details[:location] = student.css("p.student-location")
+      stu_details[:profile_url] = student.css()
   end
 
   def self.scrape_profile_page(profile_url)
