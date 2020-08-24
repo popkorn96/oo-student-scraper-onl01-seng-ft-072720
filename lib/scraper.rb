@@ -7,7 +7,7 @@ class Scraper
     students = []
     html = open(index_url)
     index  = Nokogiri::HTML(html)
-    index.css
+    index.css()
   end
 
   def self.scrape_profile_page(profile_url)
