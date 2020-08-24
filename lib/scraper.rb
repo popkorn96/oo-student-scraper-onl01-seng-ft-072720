@@ -13,7 +13,7 @@ class Scraper
       stu_details[:location] = student.css("p.student-location")
       stu_details[:profile_url] = student.css("a").attribute("href").value
       students << stu_details
-      binding.pry
+      #binding.pry
     end
   end
 
